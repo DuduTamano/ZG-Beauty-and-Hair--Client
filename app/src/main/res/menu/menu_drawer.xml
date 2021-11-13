@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/shopping_bag"
+            android:title="הזמנות שלי" />
+
+        <item
+            android:id="@+id/nav_may_account"
+            android:icon="@drawable/woman_logo"
+            android:title="חשבונית" />
+
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/heart"
+            android:title="פריטים שאהבתי" />
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/sale"
+            android:title="רישום למבצעים" />
+
+        <item
+            android:id="@+id/nav_return_policy"
+            android:icon="@drawable/store"
+            android:title="מדיניות החזרה" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contact"
+            android:title="יצירת קשר" />
+
+    </group>
+
+
+    <item android:title="">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/logOut"
+                    android:icon="@drawable/sign_out"
+                    android:title="יציאה" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

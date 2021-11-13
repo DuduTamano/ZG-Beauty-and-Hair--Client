@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-anydpi/fragment_shopping.xml" value="0.264" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-anydpi/layout_dialog_product_details.xml" value="0.2" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-hdpi/fragment_shopping.xml" value="0.1" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-hdpi/layout_dialog_product_details.xml" value="0.17798913043478262" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-large/activity_phone_auth.xml" value="0.1" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-large/fragment_shopping.xml" value="0.4" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-large/layout_dialog_product_details.xml" value="0.13422131147540983" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-mdpi/fragment_shopping.xml" value="0.271875" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-mdpi/layout_dialog_product_details.xml" value="0.17798913043478262" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-nodpi/fragment_shopping.xml" value="0.25" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-nodpi/layout_dialog_product_details.xml" value="0.2115036231884058" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-normal/activity_phone_auth.xml" value="0.375" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-normal/fragment_shopping.xml" value="0.4" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-normal/layout_dialog_product_details.xml" value="0.264" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-small/activity_phone_auth.xml" value="0.7080838323353293" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-small/fragment_shopping.xml" value="0.25" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-small/layout_dialog_product_details.xml" value="0.17798913043478262" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-sw730dp/fragment_shopping.xml" value="0.1875" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-xhdpi/fragment_shopping.xml" value="0.264" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout-xlarge/fragment_shopping.xml" value="0.264" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout/activity_phone_auth.xml" value="0.264" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout/fffff.xml" value="0.2368659420289855" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout/fragment_shopping.xml" value="0.6323529411764706" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout/layout_dialog_order_detail.xml" value="0.25" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout/layout_dialog_product_details.xml" value="0.1" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout/layout_order_detail_item.xml" value="0.3071236559139785" />
+        <entry key="..\:/Dudu Android Project/Z&amp;G Beauty and Hair/app/src/main/res/layout/layout_shopping_item.xml" value="0.3071236559139785" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

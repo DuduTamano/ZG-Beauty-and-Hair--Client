@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/card_booking_info"
+    android:layout_margin="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/back_pressed"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:onClick="back"
+        app:srcCompat="@drawable/arrow_back" />
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:text="מחיקת תור קיים"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_launcher_background"/>
+
+                <TextView
+                    android:id="@+id/txt_salon_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_toLeftOf="@id/userImage"
+                    android:fontFamily="@font/elephant"
+                    android:text="Salon Name"
+                    android:textColor="@android:color/black"
+                    android:textDirection="rtl"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_salon_name"
+                    android:layout_toLeftOf="@id/userImage"
+                    android:fontFamily="sans-serif"
+                    android:text="Customer name"
+                    android:textDirection="rtl"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_customer_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_customer_name"
+                    android:layout_toLeftOf="@id/userImage"
+                    android:fontFamily="sans-serif"
+                    android:text="Phone Number"
+                    android:textDirection="rtl"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_salon_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_customer_phone"
+                    android:layout_toLeftOf="@id/userImage"
+                    android:fontFamily="sans-serif"
+                    android:text="Address Salon"
+                    android:textDirection="rtl"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/txt_salon_address"
+                    android:layout_toLeftOf="@id/userImage"
+                    android:fontFamily="sans-serif"
+                    android:text="Time"
+                    android:textDirection="rtl"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="95dp">
+
+                <Button
+                    android:id="@+id/btn_change_booking"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@android:color/black"
+                    android:onClick="deleteBooking"
+                    android:text="שינוי"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_delete_booking"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@android:color/black"
+                    android:onClick="deleteBooking"
+                    android:text="מחיקה"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+

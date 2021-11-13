@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="19dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layoutDirection="rtl"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/product_activity"
+    tools:context=".Fragments.ShoppingFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="380dp"
+            android:layout_height="?actionBarSize"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/back_pressed"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:padding="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/arrow_back" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/rubik"
+                android:text="@string/product"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:scrollbars="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:singleLine="true"
+            app:singleSelection="true"
+            android:paddingTop="10dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_brazilian_hair"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="שיער ברזילאי"
+                android:fontFamily="@font/rubik_bold"
+                android:textColor="@android:color/black"
+                app:chipBackgroundColor="@android:color/white"
+                />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_wax"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ווקס"
+                android:fontFamily="@font/rubik"
+                android:textColor="@android:color/darker_gray"
+                app:chipBackgroundColor="@android:color/white" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_spray"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ספריי"
+                android:fontFamily="@font/rubik"
+                android:textColor="@android:color/darker_gray"
+                app:chipBackgroundColor="@android:color/white" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_hair_cream"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="קרמים לשיער"
+                android:fontFamily="@font/rubik"
+                android:textColor="@android:color/darker_gray"
+                app:chipBackgroundColor="@android:color/white" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_wave"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="פיאות"
+                android:fontFamily="@font/rubik"
+                android:textColor="@android:color/darker_gray"
+                app:chipBackgroundColor="@android:color/white" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

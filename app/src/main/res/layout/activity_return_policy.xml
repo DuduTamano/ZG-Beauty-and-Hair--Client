@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReturnPolicy"
+    android:layoutDirection="rtl"
+    android:id="@+id/ReturnPolicy_activity"
+    tools:targetApi="lollipop">
+
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back"
+        android:onClick="backToHome"/>
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/zgbeautyandhair"
+        app:layout_constraintBottom_toTopOf="@+id/third_scrollview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/third_scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_arrow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/third_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/rubik"
+                android:text="מדיניות החזרת מוצרים או ביטול עסקה"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="מידע"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/view_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/rubik"
+                android:text="1. החזרת מוצר תוך 14 יום מתאריך הרכישה בלבד, כאשר המוצר חדש ובאריזתו המקורית (מוצר סגור), בצירוף הוכחת קנייה
+חובת הלקוח להציג בפני בית העסק את הקבלה/ חשבונית המס המקורית."
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/view_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/rubik"
+                android:text="2. החזר כספי יינתן באופן בו בוצע התשלום, עד 7 ימים מיום ביצוע ההחזרה/החלפה/ביטול העסקה.
+החזר כספי במזומן יינתן בהחזרה בצירוף פתק החלפה בלבד."
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/view_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/rubik"
+                android:text="3. החזר כספי יינתן בניכוי דמי ביטול בגובה 5% מעלות המוצר או  100₪  לפי הנמוך מבניהם.
+אם יבחר הלקוח לקבל שובר זיכוי במקום ההחזר הכספי, לא יהיה חיוב דמי ביטול.
+                   "
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/view_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/rubik"
+                android:text="4. בביטול עסקאות בכרטיסי אשראי - תיתכן עמלת ביטול נוספת בגין עמלת סליקה בגובה של עד 2.5% נוספים לדמי הביטול לעיל. "
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/view_text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/rubik"
+                android:text="5. לא ניתן יהיה להחזיר מוצרים מכל סוג שהוא שנעשה בהם שימוש ו/או שיוצרו במיוחד עבור הלקוח או על פי מידותיו או בהתאם לדרישות מיוחדות ו/או מוצרים שאריזתם נפתחה ושלא ניתן לארזם בשנית."
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/view_text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/rubik"
+                android:text="6. הקונה יהיה אחראי למחיר החזרת המשלוח חזרה לבית העסק."
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/view_text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/rubik"
+                android:text="7. תוספות השיער נארזות במיוחד ונחתמות בחותם אבטחה כדי לזהות אם התוספות הוצאו מהאריזה.
+                 \nחותמות האבטחה חייבים להיות שלמים: התוספות חייבות להיות באריזה המקורית. אם החבילה הראשית נפתחה, ההחזר והחילוף לא יתקבלו."
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/view_text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rubik"
+                android:text="•	לא ניתן להחליף פאות בהתאם להוראות משרד הבריאות."
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_text9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rubik"
+                android:text="מדוע תוספות שיער אינן ניתנות להחזרה אם נפתחות?"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/rubik"
+                android:text="תוספות שיער אנושי נחשבות למוצר היגייני.
+אנו לוקחים ברצינות את ענייני ההיגיינה והבטיחות הציבורית ואינם מאפשרים להחזיר פריטים שנפתחו לצורך בטיחותם של כל לקוחותינו.                   "
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

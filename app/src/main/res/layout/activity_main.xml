@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layoutDirection="rtl"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/linear_txt_top"
+        android:textDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/elephant"
+            android:layout_alignParentStart="true"
+            android:text="G"
+            android:textColor="@color/black"
+            android:textSize="90dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/and"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/g"
+            android:fontFamily="@font/elephant"
+            android:text="&amp;"
+            android:textColor="@color/black"
+            android:textSize="60dp" />
+
+        <TextView
+            android:id="@+id/z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/and"
+            android:fontFamily="@font/elephant"
+            android:text="Z"
+            android:textColor="@color/black"
+            android:textSize="90dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/elephant"
+        android:text="Beauty and Hair"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_txt_top" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_phone_sign_in"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_header2"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="כניסה עם מספר הנייד"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/rubik_bold"
+        android:layout_marginEnd="55dp"
+        android:translationZ="100sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_phone_sign_in"
+        app:layout_constraintEnd_toEndOf="@+id/btn_phone_sign_in"
+        app:layout_constraintTop_toTopOf="@+id/btn_phone_sign_in" />
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/phone"
+        android:translationZ="100sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_phone_sign_in"
+        app:layout_constraintEnd_toEndOf="@+id/btn_phone_sign_in"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="@+id/btn_phone_sign_in"
+        app:layout_constraintTop_toTopOf="@+id/btn_phone_sign_in"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

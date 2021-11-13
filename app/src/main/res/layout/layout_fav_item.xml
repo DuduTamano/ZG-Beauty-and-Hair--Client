@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:padding="8dp"
+    android:id="@+id/favorite_layout"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_shopping_item"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_name_shopping_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="@+id/img_shopping_item"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/img_shopping_item"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/cart_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_name_shopping_item"
+            android:layout_alignParentEnd="@+id/img_shopping_item"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_shopping_item"
+            android:fontFamily="@font/rubik"
+            android:text="אורך שיער:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_cart_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_name_shopping_item"
+            android:layout_alignParentEnd="@+id/img_shopping_item"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/cart_length"
+            android:fontFamily="@font/rubik"
+            android:text="Product Price"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_shopping_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_cart_length"
+            android:layout_alignParentEnd="@+id/img_shopping_item"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_shopping_item"
+            android:fontFamily="@font/rubik_bold"
+            android:text="מחיר:"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txt_price_shopping_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_cart_length"
+            android:layout_alignParentEnd="@+id/img_shopping_item"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/txt_shopping_item"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Price"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txt_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:layout_below="@id/txt_price_shopping_item"
+            android:layout_alignParentEnd="@+id/img_shopping_item"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_shopping_item"
+            android:fontFamily="@font/rubik"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/txt_name_shopping_item"
+            android:src="@drawable/ic_favorite" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

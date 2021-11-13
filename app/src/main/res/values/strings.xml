@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Z&amp;G Beauty and Hair</string>
+
+
+    <string name="update_text">עדכון פרטים</string>
+    <string name="first_name">שם פרטי</string>
+    <string name="last_name">שם משפחה</string>
+    <string name="phone_number">נייד</string>
+    <string name="address">כתובת</string>
+    <string name="update">עדכון</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="cart">Cart</string>
+    <string name="address_bullet">\u2022 כתובתנו:</string>
+    <string name="time_bullet">\u2022 בשעה:</string>
+    <string name="stylelist_bullet">\u2022 ספרית:</string>
+    <string name="bullet">\u2022 שעה:</string>
+    <string name="status">\u2022 סטטוס התור:</string>
+
+
+    <string name="product">המצורים שלנו:</string>
+    <string name="layout_my_bag">הארנק שלי</string>
+    <string name="RATING_OUR_BARBER">דירוג חוות דעת:</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string name="card_header">NFN CARD</string>
+    <string name="card_number_sample">XXXX XXXX XXXX XXXX</string>
+    <string name="card_validity_label">VALID UPTO</string>
+    <string name="card_validity_sample">MM/YY</string>
+    <string name="card_name_sample">CARD HOLDER</string>
+
+    <string name="card_holders_name">מחזיק הכרטיס</string>
+    <string name="card_number">מספר הכרטיס</string>
+    <string name="card_validity">תוקף</string>
+    <string name="card_cvv">CVV/3 ספרות בגב הכרטיס</string>
+    <string name="todo">TODO</string>
+    <string name="xxx">XXX</string>
+
+    <string name="return_policy">מדיניות החזרת מוצרים או ביטול עסקה</string>
+
+    <string name="phone_auth">אנא הזיני את מספר הנייד ואנו נשלח לך קוד, על מנת להתחיל להנות ממה שיש לנו להציע</string>
+
+    <string name="login">בואי נתחיל</string>
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layoutDirection="rtl"
+    android:background="@android:color/white">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:hint="הקלידי את הכתובת שלך"
+            android:background="@android:color/white"
+            android:textDirection="rtl"
+            android:textSize="18sp"
+            android:fontFamily="@font/rubik_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edt_comment"
+            android:hint="הערות"
+            android:background="@android:color/white"
+            android:textDirection="rtl"
+            android:textSize="18sp"
+            android:fontFamily="@font/rubik_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:text="משלוח:"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/rubik_bold"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+        android:id="@+id/rdi_home_address"
+        android:checked="true"
+        android:text="הכתובת שלך"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:fontFamily="@font/rubik"
+        android:textColor="@android:color/black"
+        android:buttonTint="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/rdi_other_address"
+            android:text="משלוח לכתובת אחרת"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/rubik"
+            android:textColor="@android:color/black"
+            android:buttonTint="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:text="איך תרצי לשלם:"
+        android:textSize="22sp"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:id="@+id/rdi_braintree"
+            android:text="בכרטיס אשראי"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/rubik"
+            android:buttonTint="@color/red"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>
